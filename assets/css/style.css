@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+.wrapper{
+    width: 98%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+nav{
+    background-color: #fff;
+    color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 80px;
+    line-height: 65px;
+}
+
+nav .wrapper{
+    width: 98%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.wrapper .logo a{
+    color: black;
+    text-decoration: none;
+    font-size: 27px;
+}
+.nav-links{
+    height: 100%;
+}
+.nav-links li{
+    transition: all 0.3 ease;
+    padding-right: 15px;
+}
+
+.nav-links li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .nav-links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links .sub-menu{
+   background-color: #242526;
+   width: 180px;
+   position: absolute;
+   top: 85px;
+   line-height: 45px;
+   opacity: 0;
+   visibility: hidden;
+   transition: all .3s ease-in-out;
+}
+
+.nav-links li:hover .sub-menu{
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3 ease;
+}
+
+.mega-box{
+    position: absolute;
+    background-color: #242526;
+    left: 0;
+    top: 0;
+    width: 100%;
+    top: 65px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    top: 85px;
+}
+
+.mega-box header{
+    color: #fff;
+    padding: 0 35px;
+}
+.nav-links li:hover .mega-box{
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3 ease;
+}
+.language-item{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+.languages-sub-menu{
+    background-color: azure;
+    position: absolute;
+    width: 130px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    top: 30px;
+}
+.language-item:hover .languages-sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.social-list{
+    border-right:  1px solid #fff;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.header-top{
+    padding: 10px 0;
+    background-color: #313030;
+    color: #fff;
+}
+.social-list a{
+    width: 18px;
+    line-height: 20px;
+    height: 20px;
+    background: 0 0 !important;
+    font-size: 14px;
+    margin-right: 8px;
+    color: #fff;
+}
+.contact-details i{
+    font-size: 14px;
+}
+
+.contact-details a{
+    font-size: 14px;
+    color: #fff;
+}
+
+.sign-in, .languages{
+    font-size: 14px;
+    border-right:  1px solid #fff;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.currencies{
+    font-size: 14px;
+}
+.language-item i{
+    margin-left: 5px;
+}
+
+.sign-in i{
+    margin-right: 5px;
+}
+
+.menu-icons{
+    font-size: 21px;
+    color: #313030;
+}
+
+.search,.like{
+    margin-right: 25px;
+}
+
+.nav-links li a i{
+    font-size: 10px;
+    color: #313030;
+} 
+
+.mega-box ul li a{
+    color: #fff;
+}
+
+.sub-menu li a{
+    color: #fff;
+}
+
+.nav-active{
+    border-bottom: 1px solid #313030;
+    padding-bottom: 6px;
+}
+
+.banner-slide{
+    position: relative;
+}
+
+.slideshow-content{
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
+.title1 {
+    color: #313030;
+    text-transform: capitalize;
+    font-size: 90px;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.subtitle {
+    color: #535252;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.subtitle:before {
+    content: "";
+    background: #282828;
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.slideshow-btn{
+    line-height: 26px;
+    padding: 10px 37px;
+    border: 2px solid #313030;
+    text-transform: capitalize;
+    background: 0 0;
+    display: inline-block;
+    vertical-align: top;
+    color: #313030;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    margin-top: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.our-designers-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.brand-name img{
+    padding: 0 25px;
+}
+
+.owl-nav{
+    display: none !important;
+}
+.designers{
+    padding: 90px 0;
+}
+
+.designers-head h1{
+    font-family: Jost;
+    line-height: 1.5;
+    color: #313030;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.divider hr{
+    border: 1px solid #ebebeb;
+}
+
+.featured-products{
+    padding: 90px 0;
+}
+
+.products-top h3{
+    font-family: Jost;
+    color: #313030;
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+    font-size: 32px;
+}
+
+.products-top p{
+    margin-top: 10px;
+    font-family: Jost;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #707070;
+    font-weight: 400;
+    text-align: center;
+}
+
+.product-details h4 a{
+    font-size: 16px;
+    font-family: Jost;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(49, 48, 48);
+}
+
+.price span{
+    color: rgb(112, 112, 112);
+    font-family: Jost;
+    font-weight: 400; 
+    line-height: 16px;
+}
+
+.colors a{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+}
+
+.blue{
+    background-color: #24c4f4;
+}
+.beige{
+    background-color: #e9e1d6;
+}
+.pink{
+    background-color: #e9e1d6;
+}
+
+.featured-products-items .item{
+    margin-right: 15px !important;
+}
+
+.image-left img{
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.image-left{
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    position: relative;
+}
+
+.image-left img:hover{
+    transform:scale(1.1) ;
+    cursor: pointer;
+}
+
+.shirts-btn{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    text-align: center;
+}
+
+.shirts-btn a{
+    display: inline-block;
+    vertical-align: top;
+    background: #fff;
+    min-width: 160px;
+    line-height: 50px;
+    padding: 0 10px;
+    color: #313030;
+    font-size: 18px;
+}
+
+.product-img{
+    position: relative;
+}
+
+.product-img img{
+    transition: all .3s ease-in-out;
+}
+
+.img-overlay{
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.product-img:hover .img-overlay{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.overlay-content{
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: rgba(255,255,255,.9);
+    width: 100%;
+    visibility: hidden;
+    color: #707070;
+    line-height: 40px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.product-img:hover .overlay-content{
+    visibility: visible;
+}
+
+.fashion-title{
+    color: #fff;
+    padding: 16px 2px;
+    text-align: center;
+    background: #313131;
+    line-height: 1.5;
+}
+
+.fashion-title h4{
+    font-size: 22px;
+    margin: 0;
+}
+
+.fashion-title p{
+    color: rgba(255,255,255,.6);
+    font-size: 16px;
+}
+
+.black-friday-content{
+    width: 100%;
+    /* height: 300px; */
+    overflow: hidden;
+}
+
+.sale-content img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.sale-content{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.sale-content img{
+    transition: all .5s ease-in-out;
+}
+
+.sale-paragraph{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.sale-paragraph p{
+    font-size: 44px;
+    color: #313131;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+}
+
+.sale-paragraph a{
+    border: 2px solid #313131;
+    line-height: 42px;
+    padding: 0 37px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 24px;
+    color:#313131 ;
+    transition: all .3s ease-in-out;
+}
+
+.sale-paragraph a:hover{
+    background-color:#313131 ;
+    color: #fff;
+}
+
+.shop-the-look{
+    padding: 80px 0;
+}
+
+.vasia-item img{
+    width: 100%;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+.vasia-item img:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.follow-insta-section{
+    position: relative;
+}
+
+.follow-instagram{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    background: rgb(255,255,255);
+    color: rgb(49,48,48);
+    padding: 7px 14px;
+    border-radius: 2px;
+}
+.follow-instagram a{
+    color: rgb(49,48,48);
+}
+
+.follow-instagram i{
+    margin-right: 7px;
+    font-size: 25px;
+}
