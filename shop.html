@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasia</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <!-- Page Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Animate CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- Responsive Css -->
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="header-top">
+        <div class="wrapper">
+            <div class="row mx-0">
+                <div class="col-lg-6 p-0 d-flex align-items-center">
+                    <div class="social-list">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="#"><span>+68 6886 6888</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-end">
+                    <div class="sign-in">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Sign in</span>
+                    </div>
+                    <div class="languages">
+                        <div class="language-item">
+                            <span>Languages <i class="fa-solid fa-angle-down"></i> </span>
+                            <div class="languages-sub-menu">
+                                <ul class="p-0">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Germany</a></li>
+                                    <li><a href="#">France</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="currencies">
+                        <div class="language-item">
+                            <span>Currencies <i class="fa-solid fa-angle-down"></i> </span>
+                            <div class="languages-sub-menu">
+                                <ul class="p-0">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Germany</a></li>
+                                    <li><a href="#">France</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="wrapper">
+            <div class="mobile-menu">
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars"></i>
+                  </a>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div>
+                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                      </div>
+                      <div class="dropdown mt-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                          Dropdown button
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="logo">
+                <a href="#">VASIA</a>
+            </div>
+            <ul class="nav-links p-0">
+                <li><a href="#" class="nav-active">Home <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#">Shop <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#">Product <i class="fa-solid fa-angle-down"></i></a></li>
+                <li>
+                    <a href="#">Page <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub-menu p-0">
+                        <li><a href="#">Dropdown menu 1</a></li>
+                        <li><a href="#">Dropdown menu 2</a></li>
+                        <li><a href="#">Dropdown menu 3</a></li>
+                        <li><a href="#">Dropdown menu 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Categories <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="mega-box">
+                        <div class="content row">
+                            <div class="col-lg-3">
+                                <header>Design Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Dropdown menu 1</a></li>
+                                    <li><a href="#">Dropdown menu 2</a></li>
+                                    <li><a href="#">Dropdown menu 3</a></li>
+                                    <li><a href="#">Dropdown menu 4</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+                                <header>Design Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Dropdown menu 1</a></li>
+                                    <li><a href="#">Dropdown menu 2</a></li>
+                                    <li><a href="#">Dropdown menu 3</a></li>
+                                    <li><a href="#">Dropdown menu 4</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+                                <header>Design Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Dropdown menu 1</a></li>
+                                    <li><a href="#">Dropdown menu 2</a></li>
+                                    <li><a href="#">Dropdown menu 3</a></li>
+                                    <li><a href="#">Dropdown menu 4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a></li>
+            </ul>
+            <div class="menu-icons d-flex">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="like">
+                    <div class="like-items">
+                        <i class="fa-regular fa-heart"></i> <sup>(0)</sup>
+                    </div>
+
+                </div>
+                <div class="shopping-bag">
+                    <div class="shopping-bag-items">
+                        <i class="fa-solid fa-bag-shopping"></i> <sup>(0)</sup>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="banner shop-banner">
+        <div class="container">
+            <div class="shop-banner-items d-flex justify-content-center align-items-center flex-column">
+                <div class="banner-title">
+                    <h1>Shop</h1>
+                </div>
+                <div class="breadcrumb-shop">
+                    <ul class="p-0 d-flex gap-3">
+                        <li><a href="#">Home</a></li>
+                        <li>></li>
+                        <li><a href="#" class="breacrumb-active">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shop-products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-items product-items">
+                        <div class="footer-title">
+                            Products Categories
+                        </div>
+                        <ul class="footer-menu p-0">
+                            <li><a href="#">Wishlish</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Store Locator</a></li>
+                        </ul>
+                    </div>
+                    <div class="colors-widget product-items">
+                        <div class="footer-title">
+                            Color
+                        </div>
+                        <ul class="swatches-display-color p-0 d-flex gap-2 flex-wrap">
+                           <li><a href="#">
+                             <span style="background-color: #458b74;"></span>
+                           </a></li>
+                           <li><a href="#">
+                            <span style="background-color: #d5bda3;"></span>
+                          </a></li>
+                          <li><a href="#">
+                            <span style="background-color: #000;"></span>
+                          </a></li>
+                          <li><a href="#">
+                            <span style="background-color: #24c4f4;"></span>
+                          </a></li>
+                          <li><a href="#">
+                            <span style="background-color: #458b74;"></span>
+                          </a></li>
+                          <li><a href="#">
+                           <span style="background-color: #d5bda3;"></span>
+                         </a></li>
+                         <li><a href="#">
+                           <span style="background-color: #000;"></span>
+                         </a></li>
+                         <li><a href="#">
+                           <span style="background-color: #24c4f4;"></span>
+                         </a></li>
+                         <li><a href="#">
+                            <span style="background-color: #458b74;"></span>
+                          </a></li>
+                          <li><a href="#">
+                           <span style="background-color: #d5bda3;"></span>
+                         </a></li>
+                         <li><a href="#">
+                           <span style="background-color: #000;"></span>
+                         </a></li>
+                         <li><a href="#">
+                           <span style="background-color: #24c4f4;"></span>
+                         </a></li>
+                        </ul>
+                    </div>
+                    <div class="size-widget product-items">
+                        <div class="footer-title">
+                            Size
+                        </div>
+                        <div class="size-items">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">L(16)</label><br>
+                                    </div>
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">L(16)</label><br>
+                                    </div>
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">L(16)</label><br>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">L(16)</label><br>
+                                    </div>
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">L(16)</label><br>
+                                    </div>
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">L(16)</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="size-widget product-items">
+                        <div class="footer-title">
+                            Brand
+                        </div>
+                        <div class="size-items">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">Amazon Essentials (3)</label><br>
+                                    </div>
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">Fruit of the Loom (2)</label><br>
+                                    </div>
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">Fruit of the Loom (2)</label><br>
+                                    </div>
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">Amazon Essentials (3)</label><br>
+                                    </div>
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">Fruit of the Loom (2)</label><br>
+                                    </div>
+                                    <div class="size-item">
+                                        <input type="checkbox" name="size" value="L(16)">
+                                        <label for="size">Fruit of the Loom (2)</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="size-widget product-items">
+                        <div class="footer-title">
+                            Avarage Rating
+                        </div>
+                        <div class="size-items">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="rates">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>(17)</span>
+                                    </div>
+                                    <div class="rates">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <span>(4)</span>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="size-widget">
+                        <div class="footer-title">
+                            Product Tags
+                        </div>
+                        <div class="size-items">
+                            <div class="tagcloud">
+                                <a href="#">Clothes</a>
+                                <a href="#">Clothes</a>
+                                <a href="#">Clothes</a>
+                                <a href="#">Clothes</a>
+                                <a href="#">Clothes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                   <div class="products-items-top d-flex justify-content-between">
+                    <div class="products-top-left d-flex">
+                        <div class="product-view d-flex gap-3">
+                            <a href="#"><i class="fa-solid fa-table-cells"></i></a>
+                            <a href="#"><i class="fa-solid fa-list"></i></a>
+                        </div>
+                        <p class="woocommerce-result-count">Showing 1–12 of 22 results</p>
+                    </div>
+                    <div class="products-top-right">
+                        <select name="" id="">
+                            <option value="" selected>Default sorting</option>
+                            <option value="">Sort by popularity</option>
+                            <option value="">Sort by latest</option>
+                            <option value="">Sort by popularity</option>
+                            <option value="">Sort by latest</option>
+                        </select>
+                    </div>
+                   </div> 
+                   <div class="products-items-bottom">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 shop-item">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 shop-item">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 shop-item">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 shop-item">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 shop-item">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 shop-item">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 shop-item">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 shop-item">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 shop-item">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 shop-item">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-img">
+                                    <img src="./assets/img/product-1.webp" alt="">
+                                   
+                                    <div class="img-overlay">
+                                        <img src="./assets/img/product-hover.webp" alt="">
+                                        <div class="overlay-content">
+                                            Quick Table
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4><a href="#">Niko Dri-FIT Sport Clash</a></h4>
+                                </div>
+                                <div class="price d-flex align-items-center justify-content-between">
+                                    <span>$60.00 - $70.00</span>
+                                    <div class="colors">
+                                        <a href="#" class="blue"></a>
+                                        <a href="#" class="beige"></a>
+                                        <a href="#" class="pink"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="shop-pagination d-flex justify-content-center">
+                        <ul class="pages-numbers d-flex gap-2">
+                            <li><a href="#" class="pagination-active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#"><i class="fa-solid fa-arrow-right"></i></a></li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="footer-items">
+                            <div class="footer-title">
+                                Company
+                            </div>
+                            <ul class="footer-menu p-0">
+                                <li><a href="#">Wishlish</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Store Locator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="footer-items">
+                            <div class="footer-title">
+                                Company
+                            </div>
+                            <ul class="footer-menu p-0">
+                                <li><a href="#">Wishlish</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Store Locator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="footer-items">
+                            <div class="footer-title">
+                                Company
+                            </div>
+                            <ul class="footer-menu p-0">
+                                <li><a href="#">Wishlish</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Store Locator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="footer-items">
+                            <div class="footer-title">
+                                Company
+                            </div>
+                            <ul class="footer-menu p-0">
+                                <li><a href="#">Wishlish</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Store Locator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row d-flex align-content-between">
+                    <div class="col-sm-12 col-md-6">
+                        <p class="copyright m-0">
+                            Copyright © PlazaThemes. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-flex justify-content-end">
+                        <div class="footer-cards">
+                            <img src="./assets/img/payment.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Owl Carousel Js -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

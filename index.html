@@ -23,6 +23,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <!-- Responsive Menu -->
+  <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
@@ -77,10 +79,36 @@
     </header>
     <nav>
         <div class="wrapper">
+            <div class="mobile-menu">
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars"></i>
+                  </a>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div>
+                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                      </div>
+                      <div class="dropdown mt-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                          Dropdown button
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
             <div class="logo">
                 <a href="#">VASIA</a>
             </div>
-            <ul class="nav-links p-0">
+            <ul class="nav-links p-0 m-0">
                 <li><a href="#" class="nav-active">Home <i class="fa-solid fa-angle-down"></i></a></li>
                 <li><a href="#">Shop <i class="fa-solid fa-angle-down"></i></a></li>
                 <li><a href="#">Product <i class="fa-solid fa-angle-down"></i></a></li>
@@ -529,7 +557,7 @@
     <section class="vasia">
         <div class="container">
             <div class="row mx-0">
-                <div class="col-lg-8">
+                <div class="col-md-12 col-lg-8">
                     <div class="elementor-widget-container">
                         <div class="title-container">
                             <h2>#Vasia</h2>
@@ -541,23 +569,136 @@
                             <img src="./assets/img/vasia-1.webp" alt="">
                         </div>
                         <div class="col-lg-4 p-0 vasia-item follow-insta-section">
-                            <img src="./assets/img/vasia-1.webp" alt="">
+                            <img src="./assets/img/vasia-2.webp" alt="">
                             <div class="follow-instagram d-flex align-items-center">
                                 <i class="fa-brands fa-instagram"></i>
                                 <a href="#">Follow on Instagram</a>
                             </div>
                         </div>
                         <div class="col-lg-4 p-0 vasia-item">
-                            <img src="./assets/img/vasia-1.webp" alt="">
+                            <img src="./assets/img/vasia-3.webp" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-
+                <div class="col-md-12 col-lg-4">
+                    <div class="elementor-widget-container">
+                        <div class="title-container">
+                            <h2 class="title">
+                                <span>Sign up now & get 10% off</span>
+                            </h2>
+                            <p>Be the first to hear about special offers, new arrivals & more.</p>
+                        </div>
+                    </div>
+                    <div class="send-email">
+                        <div class="send-email-items">
+                            <input type="text" placeholder="Your Email Adress">
+                            <button>Subscribe!</button>
+                        </div>
+                        <p class="note">
+                            Send me news and offers from the Plazatheme. I can unsubscribe at any time.
+                            <br>
+                            I have read the Plazatheme <a href="#">Privacy Policy</a>. Offer details, financial incentives and exclusions available here.
+                        </p>
+                    </div>
+                    <div class="elementor-widget-container store-locator">
+                        <div class="title-container">
+                            <h2 class="title">
+                                <span>Store Locator</span>
+                            </h2>
+                        </div>
+                        <div class="elementor-button-wrapper">
+                            <a href="#" class="d-flex justify-content-between">
+                                <span>Stop by our stores...</span>
+                                <div class="right-arrow">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="footer-items">
+                            <div class="footer-title">
+                                Company
+                            </div>
+                            <ul class="footer-menu p-0">
+                                <li><a href="#">Wishlish</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Store Locator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="footer-items">
+                            <div class="footer-title">
+                                Company
+                            </div>
+                            <ul class="footer-menu p-0">
+                                <li><a href="#">Wishlish</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Store Locator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="footer-items">
+                            <div class="footer-title">
+                                Company
+                            </div>
+                            <ul class="footer-menu p-0">
+                                <li><a href="#">Wishlish</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Store Locator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="footer-items">
+                            <div class="footer-title">
+                                Company
+                            </div>
+                            <ul class="footer-menu p-0">
+                                <li><a href="#">Wishlish</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Store Locator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row d-flex align-content-between">
+                    <div class="col-sm-12 col-md-6">
+                        <p class="copyright m-0">
+                            Copyright © PlazaThemes. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-flex justify-content-end">
+                        <div class="footer-cards">
+                            <img src="./assets/img/payment.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Owl Carousel Js -->
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/owl.carousel.js"></script>
